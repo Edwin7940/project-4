@@ -1,0 +1,26 @@
+body {
+  background-color: rgb(1, 81, 80);
+  display: flex;
+}
+div {
+  margin: auto;
+  text-align: center;
+  color: aliceblue;
+  margin-top: 10%;
+}
+img {
+  border-radius: 200%;
+  background-color: aliceblue;
+}
+.email img {
+  width: 100px;
+}
+.github img {
+  width: 100px;
+}
+.phone img {
+  width: 100px;
+}
+div h1 {
+  font-size: 50px;
+}
