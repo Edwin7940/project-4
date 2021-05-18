@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/reg-style.css">
+        <title>registration</title>
+    </head>
+    <body>
+
+        <div class="form">
+            <div class="left">
+                <input type="text" name="name" id="name" class="input" placeholder="FULL NAME">
+                <input type="text" name="email" id="email" class="input" placeholder="EMAIL">
+                <input type="text" name="password" id="password" class="input" placeholder="PASSWORD">
+                <input type="text" name="conpPassword" id="conPassword" class="input" placeholder="CONFIRM PASSWORD">
+                <input type="text" name="phone number" id="number" class="input" placeholder="PHONE NUMBER">
+                <input type="text" name="organization" id="org" class="input" placeholder="ORGANIZATION">
+                <br>
+                <br>
+            <span id="text"></span>
+            </div>
+            <div class="right">
+                    <label class="right2" for="country">COUNTRY</label>
+                    <br>
+                    <select class="right2"name="country" id="country">
+                        <option value="0"></option>
+                        <option value="1">USA</option>
+                        <option value="2">ecuador</option>
+                        <option value="3">el salvador</option>
+                        <option value="4">germany</option>
+                        <option value="5">spain</option>
+                    </select>
+                <br>
+                <p> registration type </p>
+                <input type="radio" name="registration" id="author" value="author">
+                <label for="author"> author ($400)</label> <br>
+                <input type="radio" name="registration" id="participant" value="participant">
+                <label for="participant"> registration ($300)</label> <br>
+                <input type="radio" name="registration" id="student" value="student">
+                <label for="student"> student ($100)</label> <br><br>
+            </div>
+        
+        <div class="errors">
+            <ul>
+                <li id="nameError">Missing full name.</li>
+                <li id="emailError">Invalid or missing email address.</li>
+                <li id="passError1">Password must be between 10 and 20 characters.</li>
+                <li id="passError2">Password must contain at least one lowercase character.</li>
+                <li id="passError3">Password must contain at least one uppercase character.</li>
+                <li id="passError4">Password must contain at least one digit</li>
+                <li id="passError5">Password and confirmation password don’t match.</li>
+                <li id="orgError">Missing attendee organization.</li>
+                <li id="conError">Missing attendee country.</li>
+                <li id="numberError">Wrong phone number provided.</li>
+                <li id="regError">Please select a registration type</li>
+            </ul>
+        </div>
+        <button type="submit" onclick="validation()" class="button">register</button>
+</div>
+                <script src="js/registration.js" async defer></script>
+    </body>
+</html>
